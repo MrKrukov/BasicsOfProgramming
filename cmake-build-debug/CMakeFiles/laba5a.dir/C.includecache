@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/bitset/bitset.h
+stdint.h
+-
+stdbool.h
+-
+
+C:/Users/kruko/CLionProjects/laba5a/main.c
+stdio.h
+-
+stdbool.h
+-
+assert.h
+-
+stdint.h
+-
+bits.h
+C:/Users/kruko/CLionProjects/laba5a/bits.h
+libs/data_structures/bitset/bitset.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/bitset/bitset.h
+
