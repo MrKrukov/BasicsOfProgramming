@@ -1,4 +1,13 @@
 #include "unordered_array_set.h"
+#include <malloc.h>
+#include <stdint.h>
+#include <assert.h>
+#include <memory.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include "../../algorithms/algorithm.h"
+#include "../../algorithms/array/array.h"
 
 static void unordered_array_set_shrinkToFit(unordered_array_set *a) {
     if (a->size != a->capacity) {

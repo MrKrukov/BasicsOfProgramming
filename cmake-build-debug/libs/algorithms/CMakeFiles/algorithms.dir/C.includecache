@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/array/array.c
+stdio.h
+-
+limits.h
+-
+assert.h
+-
+array.h
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/array/array.h
+
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/array/array.h
+stddef.h
+-
+

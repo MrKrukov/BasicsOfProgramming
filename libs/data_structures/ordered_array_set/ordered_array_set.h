@@ -1,7 +1,3 @@
-//
-// Created by user on 16.12.2021.
-//
-
 #ifndef INC_ORDERED_ARRAY_SET_H
 #define INC_ORDERED_ARRAY_SET_H
 
@@ -71,6 +67,5 @@ void ordered_array_set_print(ordered_array_set set);
 
 // освобождает память, занимаемую множеством set
 void ordered_array_set_delete(ordered_array_set set);
-
 
 #endif

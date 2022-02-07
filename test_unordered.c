@@ -180,7 +180,7 @@ void test_unordered_array_set_difference3() {
     unordered_array_set set1 = unordered_array_set_create_from_array((int[]){3, 4, 1, 5, 2}, 5);
     unordered_array_set set2 = unordered_array_set_create_from_array((int[]){1, 3, 2, 6, 7}, 5);
     unordered_array_set unionSets = unordered_array_set_difference(set1, set2);
-    unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){4, 5}, 3);
+    unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){4, 5}, 2);
     assert (unordered_array_set_isEqual(unionSets, expectedRes));
     unordered_array_set_delete(set1);
     unordered_array_set_delete(set2);
@@ -241,7 +241,7 @@ void test_unordered_array_set_complement1() {
     unordered_array_set universum = unordered_array_set_create_from_array((int[]) {1, 3, 2, 4, 5}, 5);
     unordered_array_set complement = unordered_array_set_complement(set, universum);
     unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){2, 3, 4, 5}, 4);
-    assert(unordered_array_set_isEqual(universum, expectedRes));
+    assert(unordered_array_set_isEqual(complement, expectedRes));
     unordered_array_set_delete(set);
     unordered_array_set_delete(universum);
     unordered_array_set_delete(complement);
@@ -251,8 +251,8 @@ void test_unordered_array_set_complement2() {
     unordered_array_set set = unordered_array_set_create_from_array((int[]){1, 3, 2, 4}, 4);
     unordered_array_set universum = unordered_array_set_create_from_array((int[]){1, 3, 2, 4, 5}, 5);
     unordered_array_set complement = unordered_array_set_complement(set, universum);
-    unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){5}, 4);
-    assert(unordered_array_set_isEqual(universum, expectedRes));
+    unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){5}, 1);
+    assert(unordered_array_set_isEqual(complement, expectedRes));
     unordered_array_set_delete(set);
     unordered_array_set_delete(universum);
     unordered_array_set_delete(complement);
@@ -263,7 +263,7 @@ void test_unordered_array_set_complement3() {
     unordered_array_set universum = unordered_array_set_create_from_array((int[]) {1, 3, 2}, 3);
     unordered_array_set complement = unordered_array_set_complement(set, universum);
     unordered_array_set expectedRes = unordered_array_set_create_from_array((int[]){}, 0);
-    assert(unordered_array_set_isEqual(universum, expectedRes));
+    assert(unordered_array_set_isEqual(complement, expectedRes));
     unordered_array_set_delete(set);
     unordered_array_set_delete(universum);
     unordered_array_set_delete(complement);

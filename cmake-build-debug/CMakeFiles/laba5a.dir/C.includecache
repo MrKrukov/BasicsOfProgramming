@@ -6,23 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/bitset/bitset.h
-stdint.h
--
-stdbool.h
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/algorithm.h
+
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/array/array.h
+stddef.h
 -
 
-C:/Users/kruko/CLionProjects/laba5a/main.c
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/unordered_array_set/unordered_array_set.h
+malloc.h
+-
+stdint.h
+-
+assert.h
+-
+memory.h
+-
 stdio.h
 -
 stdbool.h
 -
-assert.h
+stdlib.h
 -
-stdint.h
--
-bits.h
-C:/Users/kruko/CLionProjects/laba5a/bits.h
-libs/data_structures/bitset/bitset.h
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/bitset/bitset.h
+../../algorithms/algorithm.h
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/algorithm.h
+../../algorithms/array/array.h
+C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/array/array.h
+
+C:/Users/kruko/CLionProjects/laba5a/test.c
+libs/data_structures/unordered_array_set/unordered_array_set.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/unordered_array_set/unordered_array_set.h
 

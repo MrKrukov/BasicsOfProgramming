@@ -1,7 +1,3 @@
-//
-// Created by user on 13.12.2021.
-//
-
 #include <stdio.h>
 #include <limits.h>
 #include <assert.h>

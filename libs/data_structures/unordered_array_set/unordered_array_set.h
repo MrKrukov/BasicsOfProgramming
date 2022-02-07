@@ -1,7 +1,3 @@
-//
-// Created by kruko on 02.02.2022.
-//
-
 #ifndef LABA5A_UNORDERED_ARRAY_SET_H
 #define LABA5A_UNORDERED_ARRAY_SET_H
 
@@ -12,7 +8,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
 #include "../../algorithms/algorithm.h"
 #include "../../algorithms/array/array.h"
 

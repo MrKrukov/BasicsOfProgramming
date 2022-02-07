@@ -153,6 +153,78 @@ bitset/bitset.c.s:
 	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.s
 .PHONY : bitset/bitset.c.s
 
+ordered_array_set/ordered_array_set.obj: ordered_array_set/ordered_array_set.c.obj
+.PHONY : ordered_array_set/ordered_array_set.obj
+
+# target to build an object file
+ordered_array_set/ordered_array_set.c.obj:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj
+.PHONY : ordered_array_set/ordered_array_set.c.obj
+
+ordered_array_set/ordered_array_set.i: ordered_array_set/ordered_array_set.c.i
+.PHONY : ordered_array_set/ordered_array_set.i
+
+# target to preprocess a source file
+ordered_array_set/ordered_array_set.c.i:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.i
+.PHONY : ordered_array_set/ordered_array_set.c.i
+
+ordered_array_set/ordered_array_set.s: ordered_array_set/ordered_array_set.c.s
+.PHONY : ordered_array_set/ordered_array_set.s
+
+# target to generate assembly for a file
+ordered_array_set/ordered_array_set.c.s:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.s
+.PHONY : ordered_array_set/ordered_array_set.c.s
+
+unordered_array_set/unordered_array_set.obj: unordered_array_set/unordered_array_set.c.obj
+.PHONY : unordered_array_set/unordered_array_set.obj
+
+# target to build an object file
+unordered_array_set/unordered_array_set.c.obj:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj
+.PHONY : unordered_array_set/unordered_array_set.c.obj
+
+unordered_array_set/unordered_array_set.i: unordered_array_set/unordered_array_set.c.i
+.PHONY : unordered_array_set/unordered_array_set.i
+
+# target to preprocess a source file
+unordered_array_set/unordered_array_set.c.i:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.i
+.PHONY : unordered_array_set/unordered_array_set.c.i
+
+unordered_array_set/unordered_array_set.s: unordered_array_set/unordered_array_set.c.s
+.PHONY : unordered_array_set/unordered_array_set.s
+
+# target to generate assembly for a file
+unordered_array_set/unordered_array_set.c.s:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.s
+.PHONY : unordered_array_set/unordered_array_set.c.s
+
+vector/vector.obj: vector/vector.c.obj
+.PHONY : vector/vector.obj
+
+# target to build an object file
+vector/vector.c.obj:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
+.PHONY : vector/vector.c.obj
+
+vector/vector.i: vector/vector.c.i
+.PHONY : vector/vector.i
+
+# target to preprocess a source file
+vector/vector.c.i:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.i
+.PHONY : vector/vector.c.i
+
+vector/vector.s: vector/vector.c.s
+.PHONY : vector/vector.s
+
+# target to generate assembly for a file
+vector/vector.c.s:
+	cd /d C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.s
+.PHONY : vector/vector.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -165,6 +237,15 @@ help:
 	@echo ... bitset/bitset.obj
 	@echo ... bitset/bitset.i
 	@echo ... bitset/bitset.s
+	@echo ... ordered_array_set/ordered_array_set.obj
+	@echo ... ordered_array_set/ordered_array_set.i
+	@echo ... ordered_array_set/ordered_array_set.s
+	@echo ... unordered_array_set/unordered_array_set.obj
+	@echo ... unordered_array_set/unordered_array_set.i
+	@echo ... unordered_array_set/unordered_array_set.s
+	@echo ... vector/vector.obj
+	@echo ... vector/vector.i
+	@echo ... vector/vector.s
 .PHONY : help
 
 

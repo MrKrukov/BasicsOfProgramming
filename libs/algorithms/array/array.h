@@ -1,7 +1,3 @@
-//
-// Created by user on 13.12.2021.
-//
-
 #ifndef INC_ARRAY_H
 #define INC_ARRAY_H
 
