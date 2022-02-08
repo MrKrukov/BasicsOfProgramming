@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/kruko/CLionProjects/laba5a/main.c" "C:/Users/kruko/CLionProjects/laba5a/cmake-build-debug/CMakeFiles/laba5a.dir/main.c.obj"
+  "C:/Users/kruko/CLionProjects/laba5a/test_vector.c" "C:/Users/kruko/CLionProjects/laba5a/cmake-build-debug/CMakeFiles/laba5a.dir/test_vector.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -3,7 +3,7 @@ project(laba5a C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(laba5a main.c)
+add_executable(laba5a test_vector.c)
 
 add_subdirectory(libs)
 target_link_libraries(laba5a data_structures)

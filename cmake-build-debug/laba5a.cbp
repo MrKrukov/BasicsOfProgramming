@@ -182,7 +182,7 @@
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/main.c">
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/test_vector.c">
 			<Option target="laba5a"/>
 		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/CMakeLists.txt">

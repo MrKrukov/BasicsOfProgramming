@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
+test_vector.obj: test_vector.c.obj
+.PHONY : test_vector.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.obj
-.PHONY : main.c.obj
+test_vector.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_vector.c.obj
+.PHONY : test_vector.c.obj
 
-main.i: main.c.i
-.PHONY : main.i
+test_vector.i: test_vector.c.i
+.PHONY : test_vector.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.i
-.PHONY : main.c.i
+test_vector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_vector.c.i
+.PHONY : test_vector.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+test_vector.s: test_vector.c.s
+.PHONY : test_vector.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.s
-.PHONY : main.c.s
+test_vector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_vector.c.s
+.PHONY : test_vector.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... test_vector.obj
+	@echo ... test_vector.i
+	@echo ... test_vector.s
 .PHONY : help
 
 
