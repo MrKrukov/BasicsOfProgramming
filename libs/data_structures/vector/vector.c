@@ -6,15 +6,16 @@ vector createVector(size_t n) {
         fprintf(stderr, "bad alloc");
         exit(1);
     } else
-        return (vector){memory, 0, n};
+        return (vector) {memory, 0, n};
 }
 
 void reserve(vector *v, size_t newCapacity) {
-    v->data = (int*) realloc(v->data, sizeof(int) * newCapacity);
+    realloc(v->data, sizeof(int) * newCapacity);
     if (v->data == NULL) {
         fprintf(stderr, "bad alloc");
         exit(1);
-    } if (newCapacity == 0)
+    }
+    if (newCapacity == 0)
         v->data = NULL;
     if (v->size > newCapacity)
         v->size = newCapacity;
@@ -31,6 +32,8 @@ void shrinkToFit(vector *v) {
 
 void deleteVector(vector *v) {
     free(v->data);
+    v->size = 0;
+    v->capacity =0;
 }
 
 bool isEmpty(vector *v) {
@@ -62,7 +65,7 @@ void popBack(vector *v) {
         v->size--;
 }
 
-int* atVector(vector *v, size_t index) {
+int *atVector(vector *v, size_t index) {
     if (index > v->capacity)
         fprintf(stderr, "IndexError: a[%zu] is not exists", index);
     else if (v->capacity == 0 || index > v->size) {
@@ -72,10 +75,10 @@ int* atVector(vector *v, size_t index) {
     return &v->data[index];
 }
 
-int* back(vector *v) {
+int *back(vector *v) {
     return atVector(v, v->size - 1);
 }
 
-int* front(vector *v) {
+int *front(vector *v) {
     return v->data;
 }
