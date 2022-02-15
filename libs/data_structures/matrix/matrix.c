@@ -53,7 +53,7 @@ void outputMatrices(matrix *ms, int nMatrices) {
 }
 
 void swapRows(matrix m, int i1, int i2) {
-    int* t = m.values[i1];
+    int *t = m.values[i1];
     m.values[i1] = m.values[i2];
     m.values[i2] = t;
 }
@@ -64,4 +64,36 @@ void swapColumns(matrix m, int j1, int j2) {
         m.values[i][j1] = m.values[i][j2];
         m.values[i][j2] = t;
     }
+}
+
+bool isSquareMatrix(matrix m) {
+    return m.nRows == m.nCols;
+}
+
+bool areTwoMatricesEqual(matrix m1, matrix m2) {
+    if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
+        return false;
+    for (int i = 0; i < m1.nRows; i++)
+        for (int j = 0; j < m1.nCols; j++)
+            if (m1.values[i][j] != m2.values[i][j])
+                return false;
+    return true;
+}
+
+bool isEMatrix(matrix m) {
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (i == j && m.values[i][j] != 1 || i != j && m.values[i][j] != 0)
+                return false;
+    return true;
+}
+
+bool isSymmetricMatrix(matrix m) {
+    if (!isSquareMatrix(m))
+        return false;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (i != j && m.values[i][j] != m.values[j][i])
+                return false;
+    return true;
 }
