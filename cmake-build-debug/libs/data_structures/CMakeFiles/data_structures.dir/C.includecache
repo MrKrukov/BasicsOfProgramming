@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/matrix/matrix.c
+matrix.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/matrix/matrix.h
+
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/matrix/matrix.h
+stdio.h
+-
+
 C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.c
 vector.h
 C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.h
