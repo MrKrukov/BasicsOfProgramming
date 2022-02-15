@@ -10,15 +10,15 @@
 #include <stdlib.h>
 
 typedef struct matrix {
-    int ** values ; // элементы матрицы
-    int nRows ; // количество рядов
-    int nCols ; // количество столбцов
-} matrix ;
+    int **values; // элементы матрицы
+    int nRows; // количество рядов
+    int nCols; // количество столбцов
+} matrix;
 
 typedef struct position {
-    int rowIndex ;
-    int colIndex ;
-} position ;
+    int rowIndex;
+    int colIndex;
+} position;
 
 //размещает в динамической памяти матрицу размером nRows на nCols
 matrix getMemMatrix(int nRows, int nCols);
@@ -50,6 +50,14 @@ void swapRows(matrix m, int i1, int i2);
 //обмен колонок с порядковыми номерами j1 и j2 в матрице m
 void swapColumns(matrix m, int j1, int j2);
 
+//выполняет сортировку вставками строк матрицы m по
+//неубыванию значения функции criteria применяемой для строк
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int*, int));
+
+//выполняет сортировку вставками столбцов матрицы m по
+//неубыванию значения функции criteria применяемой для столбцов
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int*, int));
+
 //возвращает значение ’истина’, если матрица m является квадратной, ложь – в противном случае
 bool isSquareMatrix(matrix m);
 
@@ -61,5 +69,25 @@ bool isEMatrix(matrix m);
 
 //возвращает значение ’истина’, если матрица m является симметричной, ложь – в противном случае
 bool isSymmetricMatrix(matrix m);
+
+//транспонирует квадратную матрицу m
+void transposeSquareMatrix(matrix m);
+
+//возвращает позицию минимального элемента матрицы m
+position getMinValuePos(matrix m);
+
+// возвращает позицию максимального элемента матрицы m
+position getMaxValuePos(matrix m);
+
+//возвращает матрицу, размера nRows на nCols, построенного из элементов
+//массива a, размещенную в динамической памяти
+matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
+
+//возвращает указатель на нулевую матрицу массива из nMatrices матриц, размещенных
+//в динамической памяти, построенных из элементов массива a
+matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices,
+                                     size_t nRows, size_t nCols);
+
+void swap(int *a, int *b);
 
 #endif //LABA5A_MATRIX_H
