@@ -1,20 +1,29 @@
 #include "libs/data_structures/matrix/matrix.h"
 
-matrix mulMatrices(matrix m1, matrix m2) {
-    assert(m1.nCols == m2.nRows);
-    matrix m3 = getMemMatrix(m1.nRows, m2.nCols);
-    for (int i = 0; i < m3.nRows; i++)
-        for (int j = 0; j < m3.nCols; j++) {
-            m3.values[i][j] = 0;
-            for (size_t k = 0; k < m1.nCols; k++)
-                m3.values[i][j] += m1.values[i][k] * m2.values[k][j];
-        }
-    return m3;
+int getMin(int *a, int left, int right) {\
+    int min = a[left];
+    for (int i = left + 1; i <= right; i++) {
+        if (a[i] < min)
+            min = a[i];
+    }
+    return min;
 }
 
-bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
-    matrix m3 = mulMatrices(m1, m2);
-    return isEMatrix(m3) ? 1 : 0;
+int getMinInArea(matrix m) {
+    int minInArea;
+    position maxElement = getMaxValuePos(m);
+    int left = maxElement.colIndex;
+    int right = maxElement.colIndex;
+    for (int i = maxElement.rowIndex; i >= 0; i--) {
+        int minInRow = getMin(m.values[i], left, right);
+        if (i == maxElement.rowIndex || minInRow < minInArea)
+            minInArea = minInRow;
+        if (right < m.nCols - 1)
+            right++;
+        if (left > 0)
+            left--;
+    }
+    return minInArea;
 }
 
 int main() {
@@ -24,13 +33,7 @@ int main() {
     matrix m1 = getMemMatrix(nRows1, nCols1);
     inputMatrix(m1);
 
-    int nRows2, nCols2;
-    scanf("%d %d", &nRows2, &nCols2);
-
-    matrix m2 = getMemMatrix(nRows2, nCols2);
-    inputMatrix(m2);
-
-    printf("%d", isMutuallyInverseMatrices(m1, m2));
+    printf("%d", getMinInArea(m1));
 
     return 0;
 }
