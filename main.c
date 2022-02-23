@@ -1,45 +1,43 @@
 #include "libs/data_structures/matrix/matrix.h"
-#include <math.h>
-#include <float.h>
 
-double maxAbsoluteValueOfMatrix(matrixf m) {
-    double absoluteValue = fabs(m.values[0][0]);
-    for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nCols; j++)
-            if (fabs(m.values[i][j]) > absoluteValue)
-                absoluteValue = fabs(m.values[i][j]);
-    return absoluteValue;
+int getSum(int *a, int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
+    return sum;
 }
 
-void printMatrixWithMinAbsoluteValue(matrixf *ms, int nMatrix) {
-    double absoluteValuesOfMatrix[nMatrix];
-    double minAbsoluteValue = maxAbsoluteValueOfMatrix(ms[0]);
-    absoluteValuesOfMatrix[0] = minAbsoluteValue;
-    for (int i = 1; i < nMatrix; i++) {
-        double absoluteValue = maxAbsoluteValueOfMatrix(ms[i]);
-        absoluteValuesOfMatrix[i] = absoluteValue;
-        if (absoluteValue < minAbsoluteValue)
-            minAbsoluteValue = absoluteValue;
-    }
-    for (int i = 0; i < nMatrix; i++) {
-        if (absoluteValuesOfMatrix[i] - minAbsoluteValue < DBL_EPSILON) {
-            outputMatrixf(ms[i]);
-            printf("\n");
-        }
-    }
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    int n = m.nRows + m.nCols - 2;
+    int maxesOfPseudoDiagonal[n];
+    for (size_t i = 0; i < n; i++)
+        maxesOfPseudoDiagonal[i] = 0;
+    int indexPseudoDiagonalElement;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (j != i) {
+                if (i > j)
+                    indexPseudoDiagonalElement = j - i + m.nRows - 1;
+                else
+                    indexPseudoDiagonalElement = j - i + m.nRows - 2;
+                maxesOfPseudoDiagonal[indexPseudoDiagonalElement] = max(maxesOfPseudoDiagonal[indexPseudoDiagonalElement],
+                        m.values[i][j]);
+            }
+    return getSum(maxesOfPseudoDiagonal, n);
 }
 
 int main() {
     int nRows1, nCols1;
     scanf("%d %d", &nRows1, &nCols1);
 
-    int nMatrices;
-    scanf("%d", &nMatrices);
+    matrix m = getMemMatrix(nRows1, nCols1);
+    inputMatrix(m);
 
-    matrixf *ms = getMemArrayOfMatricesf(nMatrices, nRows1, nCols1);
-    inputMatricesf(ms, nMatrices);
-
-    printMatrixWithMinAbsoluteValue(ms, nMatrices);
+    printf("%lld", findSumOfMaxesOfPseudoDiagonal(m));
 
     return 0;
 }
