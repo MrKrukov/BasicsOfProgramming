@@ -15,6 +15,12 @@ typedef struct matrix {
     int nCols; // количество столбцов
 } matrix;
 
+typedef struct matrixf {
+    double **values; // элементы матрицы
+    int nRows; // количество рядов
+    int nCols; // количество столбцов
+} matrixf;
+
 typedef struct position {
     int rowIndex;
     int colIndex;
@@ -89,5 +95,15 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices,
                                      size_t nRows, size_t nCols);
 
 void swap(int *a, int *b);
+
+matrixf getMemMatrixf(int nRows, int nCols);
+
+matrixf *getMemArrayOfMatricesf(int nMatrices, int nRows, int nCols);
+
+void inputMatrixf(matrixf m);
+
+void inputMatricesf(matrixf *ms, int nMatrices);
+
+void outputMatrixf(matrixf m);
 
 #endif //LABA5A_MATRIX_H

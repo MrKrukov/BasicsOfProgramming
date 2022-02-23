@@ -1,34 +1,29 @@
 #include "libs/data_structures/matrix/matrix.h"
 #include <math.h>
+#include <float.h>
 
-int countValues(const int *a, int n, int value) {
-    int count = 0;
-    for (int i = 0; i < n; i++)
-        if (a[i] == value)
-            count += 1;
-    return count;
-}
-
-int countZeroRows(matrix m) {
-    int countZeroRows = 0;
+double maxAbsoluteValueOfMatrix(matrixf m) {
+    double absoluteValue = fabs(m.values[0][0]);
     for (int i = 0; i < m.nRows; i++)
-        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
-            countZeroRows += 1;
-    return countZeroRows;
+        for (int j = 0; j < m.nCols; j++)
+            if (fabs(m.values[i][j]) > absoluteValue)
+                absoluteValue = fabs(m.values[i][j]);
+    return absoluteValue;
 }
 
-void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
-    int zeroRowsOfMatrix[nMatrix];
-    int maxZeroRows = 0;
-    for (int i = 0; i < nMatrix; i++) {
-        int zeroRows = countZeroRows(ms[i]);
-        zeroRowsOfMatrix[i] = zeroRows;
-        if (zeroRows > maxZeroRows)
-            maxZeroRows = zeroRows;
+void printMatrixWithMinAbsoluteValue(matrixf *ms, int nMatrix) {
+    double absoluteValuesOfMatrix[nMatrix];
+    double minAbsoluteValue = maxAbsoluteValueOfMatrix(ms[0]);
+    absoluteValuesOfMatrix[0] = minAbsoluteValue;
+    for (int i = 1; i < nMatrix; i++) {
+        double absoluteValue = maxAbsoluteValueOfMatrix(ms[i]);
+        absoluteValuesOfMatrix[i] = absoluteValue;
+        if (absoluteValue < minAbsoluteValue)
+            minAbsoluteValue = absoluteValue;
     }
     for (int i = 0; i < nMatrix; i++) {
-        if (zeroRowsOfMatrix[i] == maxZeroRows) {
-            outputMatrix(ms[i]);
+        if (absoluteValuesOfMatrix[i] - minAbsoluteValue < DBL_EPSILON) {
+            outputMatrixf(ms[i]);
             printf("\n");
         }
     }
@@ -41,10 +36,10 @@ int main() {
     int nMatrices;
     scanf("%d", &nMatrices);
 
-    matrix *ms = getMemArrayOfMatrices(nMatrices, nRows1, nCols1);
-    inputMatrices(ms, nMatrices);
+    matrixf *ms = getMemArrayOfMatricesf(nMatrices, nRows1, nCols1);
+    inputMatricesf(ms, nMatrices);
 
-    printMatrixWithMaxZeroRows(ms, nMatrices);
+    printMatrixWithMinAbsoluteValue(ms, nMatrices);
 
     return 0;
 }
