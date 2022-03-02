@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
+test_string.obj: test_string.c.obj
+.PHONY : test_string.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.obj
-.PHONY : main.c.obj
+test_string.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.obj
+.PHONY : test_string.c.obj
 
-main.i: main.c.i
-.PHONY : main.i
+test_string.i: test_string.c.i
+.PHONY : test_string.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.i
-.PHONY : main.c.i
+test_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.i
+.PHONY : test_string.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+test_string.s: test_string.c.s
+.PHONY : test_string.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/main.c.s
-.PHONY : main.c.s
+test_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.s
+.PHONY : test_string.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... test_string.obj
+	@echo ... test_string.i
+	@echo ... test_string.s
 .PHONY : help
 
 

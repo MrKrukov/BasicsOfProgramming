@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/matrix/matrix.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 stdio.h
--
-malloc.h
--
-stdint.h
--
-assert.h
--
-memory.h
 -
 stdbool.h
 -
-stdlib.h
+string.h
+-
+ctype.h
+-
+assert.h
 -
 
-C:/Users/kruko/CLionProjects/laba5a/main.c
-libs/data_structures/matrix/matrix.h
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/matrix/matrix.h
-math.h
--
+C:/Users/kruko/CLionProjects/laba5a/test_string.c
+libs/data_structures/string_/string_.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 

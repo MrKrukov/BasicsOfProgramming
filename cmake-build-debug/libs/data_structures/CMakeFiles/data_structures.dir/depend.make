@@ -12,6 +12,9 @@ libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_ar
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/ordered_array_set/ordered_array_set.c \
  ../libs/data_structures/ordered_array_set/ordered_array_set.h
+libs/data_structures/CMakeFiles/data_structures.dir/string_/string_.c.obj: \
+ ../libs/data_structures/string_/string_.c \
+ ../libs/data_structures/string_/string_.h
 libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj: \
  ../libs/algorithms/algorithm.h \
  ../libs/algorithms/array/array.h \
