@@ -36,8 +36,8 @@ void test_strcmp_equal() {
 
 void test_strcmp_lesser() {
     char c1[] = "abc";
-    char c2[] = "bcd";
-    assert(strcmp(c1, c2) == -1);
+    char c2[] = "ccd";
+    assert(strcmp(c1, c2) == -2);
 }
 
 void test_strcmp_bigger() {

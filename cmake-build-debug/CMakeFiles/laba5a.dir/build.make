@@ -65,27 +65,27 @@ include CMakeFiles/laba5a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/laba5a.dir/flags.make
 
-CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj: CMakeFiles/laba5a.dir/flags.make
-CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj: ../replaceEachNumberWithSpaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\laba5a.dir\replaceEachNumberWithSpaces.c.obj -c C:\Users\kruko\CLionProjects\laba5a\replaceEachNumberWithSpaces.c
+CMakeFiles/laba5a.dir/test_string.c.obj: CMakeFiles/laba5a.dir/flags.make
+CMakeFiles/laba5a.dir/test_string.c.obj: ../test_string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/laba5a.dir/test_string.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\laba5a.dir\test_string.c.obj -c C:\Users\kruko\CLionProjects\laba5a\test_string.c
 
-CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\kruko\CLionProjects\laba5a\replaceEachNumberWithSpaces.c > CMakeFiles\laba5a.dir\replaceEachNumberWithSpaces.c.i
+CMakeFiles/laba5a.dir/test_string.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/laba5a.dir/test_string.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\kruko\CLionProjects\laba5a\test_string.c > CMakeFiles\laba5a.dir\test_string.c.i
 
-CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\kruko\CLionProjects\laba5a\replaceEachNumberWithSpaces.c -o CMakeFiles\laba5a.dir\replaceEachNumberWithSpaces.c.s
+CMakeFiles/laba5a.dir/test_string.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/laba5a.dir/test_string.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\kruko\CLionProjects\laba5a\test_string.c -o CMakeFiles\laba5a.dir\test_string.c.s
 
 # Object files for target laba5a
 laba5a_OBJECTS = \
-"CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj"
+"CMakeFiles/laba5a.dir/test_string.c.obj"
 
 # External object files for target laba5a
 laba5a_EXTERNAL_OBJECTS =
 
-laba5a.exe: CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj
+laba5a.exe: CMakeFiles/laba5a.dir/test_string.c.obj
 laba5a.exe: CMakeFiles/laba5a.dir/build.make
 laba5a.exe: libs/data_structures/libdata_structures.a
 laba5a.exe: libs/algorithms/libalgorithms.a

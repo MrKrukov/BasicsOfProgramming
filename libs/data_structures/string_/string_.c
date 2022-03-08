@@ -108,6 +108,10 @@ char *getEndOfString(char *s) {
     return s + strlen(s);
 }
 
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    return strcmp(w1.begin, w2.begin);
+}
+
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName, int line) {
     if (strcmp(expected, got)) {

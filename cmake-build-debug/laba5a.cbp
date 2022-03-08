@@ -194,10 +194,7 @@
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/replaceEachNumberWithSpaces.c">
-			<Option target="laba5a"/>
-		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/replaceEachNumberWithSpaces.h">
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/test_string.c">
 			<Option target="laba5a"/>
 		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/CMakeLists.txt">

@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-replaceEachNumberWithSpaces.obj: replaceEachNumberWithSpaces.c.obj
-.PHONY : replaceEachNumberWithSpaces.obj
+test_string.obj: test_string.c.obj
+.PHONY : test_string.obj
 
 # target to build an object file
-replaceEachNumberWithSpaces.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj
-.PHONY : replaceEachNumberWithSpaces.c.obj
+test_string.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.obj
+.PHONY : test_string.c.obj
 
-replaceEachNumberWithSpaces.i: replaceEachNumberWithSpaces.c.i
-.PHONY : replaceEachNumberWithSpaces.i
+test_string.i: test_string.c.i
+.PHONY : test_string.i
 
 # target to preprocess a source file
-replaceEachNumberWithSpaces.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.i
-.PHONY : replaceEachNumberWithSpaces.c.i
+test_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.i
+.PHONY : test_string.c.i
 
-replaceEachNumberWithSpaces.s: replaceEachNumberWithSpaces.c.s
-.PHONY : replaceEachNumberWithSpaces.s
+test_string.s: test_string.c.s
+.PHONY : test_string.s
 
 # target to generate assembly for a file
-replaceEachNumberWithSpaces.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.s
-.PHONY : replaceEachNumberWithSpaces.c.s
+test_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.s
+.PHONY : test_string.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... replaceEachNumberWithSpaces.obj
-	@echo ... replaceEachNumberWithSpaces.i
-	@echo ... replaceEachNumberWithSpaces.s
+	@echo ... test_string.obj
+	@echo ... test_string.i
+	@echo ... test_string.s
 .PHONY : help
 
 
