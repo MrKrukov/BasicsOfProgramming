@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-test_string.obj: test_string.c.obj
-.PHONY : test_string.obj
+removeNonLetters.obj: removeNonLetters.c.obj
+.PHONY : removeNonLetters.obj
 
 # target to build an object file
-test_string.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.obj
-.PHONY : test_string.c.obj
+removeNonLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.obj
+.PHONY : removeNonLetters.c.obj
 
-test_string.i: test_string.c.i
-.PHONY : test_string.i
+removeNonLetters.i: removeNonLetters.c.i
+.PHONY : removeNonLetters.i
 
 # target to preprocess a source file
-test_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.i
-.PHONY : test_string.c.i
+removeNonLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.i
+.PHONY : removeNonLetters.c.i
 
-test_string.s: test_string.c.s
-.PHONY : test_string.s
+removeNonLetters.s: removeNonLetters.c.s
+.PHONY : removeNonLetters.s
 
 # target to generate assembly for a file
-test_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.s
-.PHONY : test_string.c.s
+removeNonLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.s
+.PHONY : removeNonLetters.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... test_string.obj
-	@echo ... test_string.i
-	@echo ... test_string.s
+	@echo ... removeNonLetters.obj
+	@echo ... removeNonLetters.i
+	@echo ... removeNonLetters.s
 .PHONY : help
 
 

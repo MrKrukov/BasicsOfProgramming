@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/laba5a.dir/test_string.c.obj"
+  "CMakeFiles/laba5a.dir/removeNonLetters.c.obj"
   "laba5a.exe"
   "laba5a.exe.manifest"
   "laba5a.pdb"

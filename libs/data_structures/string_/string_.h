@@ -7,6 +7,9 @@
 #include <ctype.h>
 #include <assert.h>
 
+#define ASSERT_STRING(expected, got) assertString(expected, got, \
+__FILE__, __FUNCTION__, __LINE__)
+
 //возвращает количество символов в строке
 size_t strlen_(const char *begin);
 
@@ -48,5 +51,8 @@ char *copyIf(char *beginSource, const char *endSource,
 //начиная с rbeginSource заканчивая rendSource, удовлетворяющие функции-предикату f
 char *copyIfReverse(char *rbeginSource, const char *rendSource,
                     char *beginDestination, int (*f)(int));
+
+void assertString(const char *expected, char * got,
+                    char const *fileName, char const *funcName, int line);
 
 #endif //LABA5A_STRING__H
