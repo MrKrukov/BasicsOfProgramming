@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-removeAdjacentEqualLetters.obj: removeAdjacentEqualLetters.c.obj
-.PHONY : removeAdjacentEqualLetters.obj
+digitToStart.obj: digitToStart.c.obj
+.PHONY : digitToStart.obj
 
 # target to build an object file
-removeAdjacentEqualLetters.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.obj
-.PHONY : removeAdjacentEqualLetters.c.obj
+digitToStart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/digitToStart.c.obj
+.PHONY : digitToStart.c.obj
 
-removeAdjacentEqualLetters.i: removeAdjacentEqualLetters.c.i
-.PHONY : removeAdjacentEqualLetters.i
+digitToStart.i: digitToStart.c.i
+.PHONY : digitToStart.i
 
 # target to preprocess a source file
-removeAdjacentEqualLetters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.i
-.PHONY : removeAdjacentEqualLetters.c.i
+digitToStart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/digitToStart.c.i
+.PHONY : digitToStart.c.i
 
-removeAdjacentEqualLetters.s: removeAdjacentEqualLetters.c.s
-.PHONY : removeAdjacentEqualLetters.s
+digitToStart.s: digitToStart.c.s
+.PHONY : digitToStart.s
 
 # target to generate assembly for a file
-removeAdjacentEqualLetters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.s
-.PHONY : removeAdjacentEqualLetters.c.s
+digitToStart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/digitToStart.c.s
+.PHONY : digitToStart.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... removeAdjacentEqualLetters.obj
-	@echo ... removeAdjacentEqualLetters.i
-	@echo ... removeAdjacentEqualLetters.s
+	@echo ... digitToStart.obj
+	@echo ... digitToStart.i
+	@echo ... digitToStart.s
 .PHONY : help
 
 

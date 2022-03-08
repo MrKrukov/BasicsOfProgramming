@@ -44,10 +44,10 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
 }
 
 int strcmp(const char *lhs, const char *rhs) {
-    while (*lhs != '\0' && *rhs != '\0' && *lhs == *rhs)
+    while (*lhs && (*lhs == *rhs))
         lhs++, rhs++;
 
-    return (*lhs > *rhs) - (*lhs < *rhs);
+    return *lhs - *rhs;
 }
 
 char *copy(const char *beginSource, const char *endSource,
@@ -82,6 +82,26 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource,
     }
 
     return beginDestination;
+}
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+}
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rbegin, rend) + 1;
+    if (word->end == rend)
+        return false;
+
+    word->begin = findSpaceReverse(word->end, rend) + 1;
+
+    return true;
 }
 
 void assertString(const char *expected, char *got,

@@ -9,6 +9,17 @@
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, \
 __FILE__, __FUNCTION__, __LINE__)
+#define MAX_STRING_SIZE 100
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_WORD_SIZE 20
+
+char _stringBuffer[MAX_STRING_SIZE + 1];
+
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
 
 //возвращает количество символов в строке
 size_t strlen_(const char *begin);
@@ -52,7 +63,15 @@ char *copyIf(char *beginSource, const char *endSource,
 char *copyIfReverse(char *rbeginSource, const char *rendSource,
                     char *beginDestination, int (*f)(int));
 
-void assertString(const char *expected, char * got,
-                    char const *fileName, char const *funcName, int line);
+// вернёт значение 0, если слово не было считано, в противном
+// случае будет возвращено значение 1 и в переменную word
+// будут записаны позиции начала слова
+// и первого символа после конца слова
+int getWord(char *beginSearch, WordDescriptor *word);
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
+
+void assertString(const char *expected, char *got,
+                  char const *fileName, char const *funcName, int line);
 
 #endif //LABA5A_STRING__H

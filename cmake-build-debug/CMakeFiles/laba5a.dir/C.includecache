@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/kruko/CLionProjects/laba5a/digitToStart.c
+digitToStart.h
+C:/Users/kruko/CLionProjects/laba5a/digitToStart.h
+
+C:/Users/kruko/CLionProjects/laba5a/digitToStart.h
+libs/data_structures/string_/string_.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
+
 C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 stdio.h
 -
@@ -17,12 +25,4 @@ ctype.h
 -
 assert.h
 -
-
-C:/Users/kruko/CLionProjects/laba5a/removeAdjacentEqualLetters.c
-removeAdjacentEqualLetters.h
-C:/Users/kruko/CLionProjects/laba5a/removeAdjacentEqualLetters.h
-
-C:/Users/kruko/CLionProjects/laba5a/removeAdjacentEqualLetters.h
-libs/data_structures/string_/string_.h
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 
