@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-removeNonLetters.obj: removeNonLetters.c.obj
-.PHONY : removeNonLetters.obj
+removeAdjacentEqualLetters.obj: removeAdjacentEqualLetters.c.obj
+.PHONY : removeAdjacentEqualLetters.obj
 
 # target to build an object file
-removeNonLetters.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.obj
-.PHONY : removeNonLetters.c.obj
+removeAdjacentEqualLetters.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.obj
+.PHONY : removeAdjacentEqualLetters.c.obj
 
-removeNonLetters.i: removeNonLetters.c.i
-.PHONY : removeNonLetters.i
+removeAdjacentEqualLetters.i: removeAdjacentEqualLetters.c.i
+.PHONY : removeAdjacentEqualLetters.i
 
 # target to preprocess a source file
-removeNonLetters.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.i
-.PHONY : removeNonLetters.c.i
+removeAdjacentEqualLetters.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.i
+.PHONY : removeAdjacentEqualLetters.c.i
 
-removeNonLetters.s: removeNonLetters.c.s
-.PHONY : removeNonLetters.s
+removeAdjacentEqualLetters.s: removeAdjacentEqualLetters.c.s
+.PHONY : removeAdjacentEqualLetters.s
 
 # target to generate assembly for a file
-removeNonLetters.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeNonLetters.c.s
-.PHONY : removeNonLetters.c.s
+removeAdjacentEqualLetters.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/removeAdjacentEqualLetters.c.s
+.PHONY : removeAdjacentEqualLetters.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... removeNonLetters.obj
-	@echo ... removeNonLetters.i
-	@echo ... removeNonLetters.s
+	@echo ... removeAdjacentEqualLetters.obj
+	@echo ... removeAdjacentEqualLetters.i
+	@echo ... removeAdjacentEqualLetters.s
 .PHONY : help
 
 

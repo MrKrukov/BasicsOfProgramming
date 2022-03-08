@@ -194,10 +194,10 @@
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/removeNonLetters.c">
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/removeAdjacentEqualLetters.c">
 			<Option target="laba5a"/>
 		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/removeNonLetters.h">
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/removeAdjacentEqualLetters.h">
 			<Option target="laba5a"/>
 		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/CMakeLists.txt">
