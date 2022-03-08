@@ -104,6 +104,10 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     return true;
 }
 
+char *getEndOfString(char *s) {
+    return s + strlen(s);
+}
+
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName, int line) {
     if (strcmp(expected, got)) {

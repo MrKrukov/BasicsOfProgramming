@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/laba5a.dir/digitToStart.c.obj"
+  "CMakeFiles/laba5a.dir/replaceEachNumberWithSpaces.c.obj"
   "laba5a.exe"
   "laba5a.exe.manifest"
   "laba5a.pdb"
