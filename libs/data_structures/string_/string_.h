@@ -67,20 +67,23 @@ char *copyIf(char *beginSource, const char *endSource,
 char *copyIfReverse(char *rbeginSource, const char *rendSource,
                     char *beginDestination, int (*f)(int));
 
-// вернёт значение 0, если слово не было считано, в противном
-// случае будет возвращено значение 1 и в переменную word
-// будут записаны позиции начала слова
-// и первого символа после конца слова
+//вернёт значение 0, если слово не было считано, в противном
+//случае будет возвращено значение 1 и в переменную word
+//будут записаны позиции начала слова
+//и первого символа после конца слова
 int getWord(char *beginSearch, WordDescriptor *word);
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
+//возвращает указатель на конец строки
 char *getEndOfString(char *s);
 
+//вернёт значение 0, если слово w1 не совпадает со словом w2 иначе 1
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 
 void getBagOfWords(BagOfWords *bag, char *s);
 
+//возвращает значение 'истина', если слово является палиндромом
 bool isPalindrome(char *begin, char *end);
 
 char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination);

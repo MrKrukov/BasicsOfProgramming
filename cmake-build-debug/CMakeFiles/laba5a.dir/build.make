@@ -65,27 +65,27 @@ include CMakeFiles/laba5a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/laba5a.dir/flags.make
 
-CMakeFiles/laba5a.dir/countPalindromes.c.obj: CMakeFiles/laba5a.dir/flags.make
-CMakeFiles/laba5a.dir/countPalindromes.c.obj: ../countPalindromes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/laba5a.dir/countPalindromes.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\laba5a.dir\countPalindromes.c.obj -c C:\Users\kruko\CLionProjects\laba5a\countPalindromes.c
+CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj: CMakeFiles/laba5a.dir/flags.make
+CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj: ../combiningTwoStrings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kruko\CLionProjects\laba5a\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\laba5a.dir\combiningTwoStrings.c.obj -c C:\Users\kruko\CLionProjects\laba5a\combiningTwoStrings.c
 
-CMakeFiles/laba5a.dir/countPalindromes.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/laba5a.dir/countPalindromes.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\kruko\CLionProjects\laba5a\countPalindromes.c > CMakeFiles\laba5a.dir\countPalindromes.c.i
+CMakeFiles/laba5a.dir/combiningTwoStrings.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/laba5a.dir/combiningTwoStrings.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\kruko\CLionProjects\laba5a\combiningTwoStrings.c > CMakeFiles\laba5a.dir\combiningTwoStrings.c.i
 
-CMakeFiles/laba5a.dir/countPalindromes.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/laba5a.dir/countPalindromes.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\kruko\CLionProjects\laba5a\countPalindromes.c -o CMakeFiles\laba5a.dir\countPalindromes.c.s
+CMakeFiles/laba5a.dir/combiningTwoStrings.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/laba5a.dir/combiningTwoStrings.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\kruko\CLionProjects\laba5a\combiningTwoStrings.c -o CMakeFiles\laba5a.dir\combiningTwoStrings.c.s
 
 # Object files for target laba5a
 laba5a_OBJECTS = \
-"CMakeFiles/laba5a.dir/countPalindromes.c.obj"
+"CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj"
 
 # External object files for target laba5a
 laba5a_EXTERNAL_OBJECTS =
 
-laba5a.exe: CMakeFiles/laba5a.dir/countPalindromes.c.obj
+laba5a.exe: CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj
 laba5a.exe: CMakeFiles/laba5a.dir/build.make
 laba5a.exe: libs/data_structures/libdata_structures.a
 laba5a.exe: libs/algorithms/libalgorithms.a

@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-countPalindromes.obj: countPalindromes.c.obj
-.PHONY : countPalindromes.obj
+combiningTwoStrings.obj: combiningTwoStrings.c.obj
+.PHONY : combiningTwoStrings.obj
 
 # target to build an object file
-countPalindromes.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.obj
-.PHONY : countPalindromes.c.obj
+combiningTwoStrings.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj
+.PHONY : combiningTwoStrings.c.obj
 
-countPalindromes.i: countPalindromes.c.i
-.PHONY : countPalindromes.i
+combiningTwoStrings.i: combiningTwoStrings.c.i
+.PHONY : combiningTwoStrings.i
 
 # target to preprocess a source file
-countPalindromes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.i
-.PHONY : countPalindromes.c.i
+combiningTwoStrings.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/combiningTwoStrings.c.i
+.PHONY : combiningTwoStrings.c.i
 
-countPalindromes.s: countPalindromes.c.s
-.PHONY : countPalindromes.s
+combiningTwoStrings.s: combiningTwoStrings.c.s
+.PHONY : combiningTwoStrings.s
 
 # target to generate assembly for a file
-countPalindromes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.s
-.PHONY : countPalindromes.c.s
+combiningTwoStrings.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/combiningTwoStrings.c.s
+.PHONY : combiningTwoStrings.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... countPalindromes.obj
-	@echo ... countPalindromes.i
-	@echo ... countPalindromes.s
+	@echo ... combiningTwoStrings.obj
+	@echo ... combiningTwoStrings.i
+	@echo ... combiningTwoStrings.s
 .PHONY : help
 
 

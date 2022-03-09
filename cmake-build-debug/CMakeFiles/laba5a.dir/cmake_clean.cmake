@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/laba5a.dir/countPalindromes.c.obj"
+  "CMakeFiles/laba5a.dir/combiningTwoStrings.c.obj"
   "laba5a.exe"
   "laba5a.exe.manifest"
   "laba5a.pdb"
