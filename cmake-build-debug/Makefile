@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-test_string.obj: test_string.c.obj
-.PHONY : test_string.obj
+isWordsOrderedLexically.obj: isWordsOrderedLexically.c.obj
+.PHONY : isWordsOrderedLexically.obj
 
 # target to build an object file
-test_string.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.obj
-.PHONY : test_string.c.obj
+isWordsOrderedLexically.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.obj
+.PHONY : isWordsOrderedLexically.c.obj
 
-test_string.i: test_string.c.i
-.PHONY : test_string.i
+isWordsOrderedLexically.i: isWordsOrderedLexically.c.i
+.PHONY : isWordsOrderedLexically.i
 
 # target to preprocess a source file
-test_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.i
-.PHONY : test_string.c.i
+isWordsOrderedLexically.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.i
+.PHONY : isWordsOrderedLexically.c.i
 
-test_string.s: test_string.c.s
-.PHONY : test_string.s
+isWordsOrderedLexically.s: isWordsOrderedLexically.c.s
+.PHONY : isWordsOrderedLexically.s
 
 # target to generate assembly for a file
-test_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/test_string.c.s
-.PHONY : test_string.c.s
+isWordsOrderedLexically.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.s
+.PHONY : isWordsOrderedLexically.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... test_string.obj
-	@echo ... test_string.i
-	@echo ... test_string.s
+	@echo ... isWordsOrderedLexically.obj
+	@echo ... isWordsOrderedLexically.i
+	@echo ... isWordsOrderedLexically.s
 .PHONY : help
 
 
