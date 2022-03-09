@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-printWordsReverse.obj: printWordsReverse.c.obj
-.PHONY : printWordsReverse.obj
+countPalindromes.obj: countPalindromes.c.obj
+.PHONY : countPalindromes.obj
 
 # target to build an object file
-printWordsReverse.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.obj
-.PHONY : printWordsReverse.c.obj
+countPalindromes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.obj
+.PHONY : countPalindromes.c.obj
 
-printWordsReverse.i: printWordsReverse.c.i
-.PHONY : printWordsReverse.i
+countPalindromes.i: countPalindromes.c.i
+.PHONY : countPalindromes.i
 
 # target to preprocess a source file
-printWordsReverse.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.i
-.PHONY : printWordsReverse.c.i
+countPalindromes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.i
+.PHONY : countPalindromes.c.i
 
-printWordsReverse.s: printWordsReverse.c.s
-.PHONY : printWordsReverse.s
+countPalindromes.s: countPalindromes.c.s
+.PHONY : countPalindromes.s
 
 # target to generate assembly for a file
-printWordsReverse.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.s
-.PHONY : printWordsReverse.c.s
+countPalindromes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/countPalindromes.c.s
+.PHONY : countPalindromes.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... printWordsReverse.obj
-	@echo ... printWordsReverse.i
-	@echo ... printWordsReverse.s
+	@echo ... countPalindromes.obj
+	@echo ... countPalindromes.i
+	@echo ... countPalindromes.s
 .PHONY : help
 
 

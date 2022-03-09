@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.c" "C:/Users/kruko/CLionProjects/laba5a/cmake-build-debug/CMakeFiles/laba5a.dir/printWordsReverse.c.obj"
+  "C:/Users/kruko/CLionProjects/laba5a/countPalindromes.c" "C:/Users/kruko/CLionProjects/laba5a/cmake-build-debug/CMakeFiles/laba5a.dir/countPalindromes.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

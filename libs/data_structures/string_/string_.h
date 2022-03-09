@@ -81,6 +81,8 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 
 void getBagOfWords(BagOfWords *bag, char *s);
 
+bool isPalindrome(char *begin, char *end);
+
 char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination);
 
 void assertString(const char *expected, char *got,

@@ -133,6 +133,17 @@ char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestina
     return beginDestination;
 }
 
+bool isPalindrome(char *begin, char *end) {
+    end--;
+    while (end - begin > 0) {
+        if (*begin != *end)
+            return false;
+        begin++;
+        end--;
+    }
+    return true;
+}
+
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName, int line) {
     if (strcmp(expected, got)) {
