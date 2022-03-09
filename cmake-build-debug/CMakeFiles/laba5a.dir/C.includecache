@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/kruko/CLionProjects/laba5a/isWordsOrderedLexically.c
-isWordsOrderedLexically.h
-C:/Users/kruko/CLionProjects/laba5a/isWordsOrderedLexically.h
-
-C:/Users/kruko/CLionProjects/laba5a/isWordsOrderedLexically.h
-libs/data_structures/string_/string_.h
-C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
-
 C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 stdio.h
 -
@@ -25,4 +17,12 @@ ctype.h
 -
 assert.h
 -
+
+C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.c
+printWordsReverse.h
+C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.h
+
+C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.h
+libs/data_structures/string_/string_.h
+C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/string_/string_.h
 

@@ -154,29 +154,29 @@ data_structures/fast:
 	$(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/build
 .PHONY : data_structures/fast
 
-isWordsOrderedLexically.obj: isWordsOrderedLexically.c.obj
-.PHONY : isWordsOrderedLexically.obj
+printWordsReverse.obj: printWordsReverse.c.obj
+.PHONY : printWordsReverse.obj
 
 # target to build an object file
-isWordsOrderedLexically.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.obj
-.PHONY : isWordsOrderedLexically.c.obj
+printWordsReverse.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.obj
+.PHONY : printWordsReverse.c.obj
 
-isWordsOrderedLexically.i: isWordsOrderedLexically.c.i
-.PHONY : isWordsOrderedLexically.i
+printWordsReverse.i: printWordsReverse.c.i
+.PHONY : printWordsReverse.i
 
 # target to preprocess a source file
-isWordsOrderedLexically.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.i
-.PHONY : isWordsOrderedLexically.c.i
+printWordsReverse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.i
+.PHONY : printWordsReverse.c.i
 
-isWordsOrderedLexically.s: isWordsOrderedLexically.c.s
-.PHONY : isWordsOrderedLexically.s
+printWordsReverse.s: printWordsReverse.c.s
+.PHONY : printWordsReverse.s
 
 # target to generate assembly for a file
-isWordsOrderedLexically.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/isWordsOrderedLexically.c.s
-.PHONY : isWordsOrderedLexically.c.s
+printWordsReverse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba5a.dir\build.make CMakeFiles/laba5a.dir/printWordsReverse.c.s
+.PHONY : printWordsReverse.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo ... algorithms
 	@echo ... data_structures
 	@echo ... laba5a
-	@echo ... isWordsOrderedLexically.obj
-	@echo ... isWordsOrderedLexically.i
-	@echo ... isWordsOrderedLexically.s
+	@echo ... printWordsReverse.obj
+	@echo ... printWordsReverse.i
+	@echo ... printWordsReverse.s
 .PHONY : help
 
 

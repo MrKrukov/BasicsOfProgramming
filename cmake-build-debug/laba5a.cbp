@@ -146,12 +146,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/isWordsOrderedLexically.c">
-			<Option target="laba5a"/>
-		</Unit>
-		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/isWordsOrderedLexically.h">
-			<Option target="laba5a"/>
-		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/libs/algorithms/algorithm.c">
 			<Option target="algorithms"/>
 		</Unit>
@@ -199,6 +193,12 @@
 		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.c">
+			<Option target="laba5a"/>
+		</Unit>
+		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/printWordsReverse.h">
+			<Option target="laba5a"/>
 		</Unit>
 		<Unit filename="C:/Users/kruko/CLionProjects/laba5a/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
